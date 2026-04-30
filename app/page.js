@@ -19,34 +19,33 @@ export default function JenniferHiggsStewartOnlineResume() {
     }
   ];
 
-  const jewelryCards = [
-    {
-      title: "Hero Statement Necklace",
-      image: "/images/triangle-white-turq-necklace.jpg",
-      note: "Geometric statement necklace with bold triangular wire design and red accents."
-    },
-    {
-      title: "Signature Detail",
-      image: "/images/brass-wire-wrapped-earrings.jpg",
-      note: "Textured brass earrings with handcrafted detail."
-    },
-    {
-      title: "Craft & Precision",
-      image: "/images/citrine-brass-tree-necklace.jpg",
-      note: "Wire-wrapped tree of life pendant with citrine stones."
-    },
-    {
-      title: "Statement Piece",
-      image: "/images/medium-red-brass-earrings.jpg",
-      note: "Bold brass earrings with red accents."
-    },
-    {
-      title: "Curated Collection",
-      image: "/images/desert-jasper-bracelet.jpg",
-      note: "Earth-toned jasper bracelet with copper wrapping."
-    }
-  ];
-
+const jewelryCards = [
+  {
+    title: "Hero Statement Necklace",
+    image: "/images/triangle-white-turq-necklace.jpg.jpg",
+    note: "Geometric statement necklace with bold triangular wire design and red accents—perfect for the hero section or featured visual."
+  },
+  {
+    title: "Signature Detail",
+    image: "/images/brass-wire-wrapped-earrings.jpg.jpg",
+    note: "Textured brass earrings with an organic, handcrafted pattern—perfect as a standout opening visual."
+  },
+  {
+    title: "Craft & Precision",
+    image: "/images/citrine-brass-tree-necklace.jpg.jpg",
+    note: "Wire-wrapped tree of life pendant with citrine stones, showcasing detail and artisan craftsmanship."
+  },
+  {
+    title: "Statement Piece",
+    image: "/images/medium-red-brass-earrings.jpg.jpg",
+    note: "Bold brass and red accent earrings that add personality and contrast to the collection."
+  },
+  {
+    title: "Curated Collection",
+    image: "/images/desert-jasper-bracelet.jpg.jpg",
+    note: "Earth-toned jasper bracelet with copper wire wrapping—natural, grounded, and versatile."
+  }
+];
   return (
     <div className="min-h-screen bg-neutral-950 text-white p-6">
       <h1 className="text-3xl font-bold mb-6">Jennifer Higgs Stewart</h1>

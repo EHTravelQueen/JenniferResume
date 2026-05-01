@@ -1,58 +1,79 @@
 export default function JenniferHiggsStewartOnlineResume() {
+  const imageExt = ".jpg.jpg";
+
   const experience = [
     {
       role: "Engineering Program Manager III",
       company: "Quantum Corp.",
       location: "Remote (Mendota Heights, MN)",
       dates: "Jul 2021 – Feb 2024",
-      summary:
-        "Led enterprise storage hardware and software delivery across globally distributed teams, improving execution consistency, visibility, and cross-program alignment.",
+      focus: "Enterprise storage hardware & software delivery",
       bullets: [
-        "Coached multiple cross-functional teams delivering enterprise storage hardware and software.",
-        "Built strong executive relationships to maintain alignment across leadership and stakeholders.",
-        "Established standardized delivery cadences, planning forums, and execution rhythms.",
-        "Drove Agile best-practice adoption and continuous improvement to reduce schedule risk.",
-        "Owned cross-program dependency management, risk mitigation, and blocker resolution.",
-        "Developed executive-level program reviews to improve visibility into progress, risks, and trade-offs.",
-        "Designed shared templates, dashboards, and information radiators to improve transparency."
+        "Led and coached multiple cross-functional teams delivering enterprise storage hardware and software.",
+        "Built strong executive relationships to maintain alignment across leadership.",
+        "Established standardized delivery cadences and planning rhythms.",
+        "Drove Agile best-practice adoption and continuous improvement.",
+        "Owned cross-program dependency management and risk mitigation.",
+        "Developed executive-level program reviews for leadership visibility."
       ]
     }
   ];
 
-  const jewelryCards = [
-    {
-      title: "Hero Statement Necklace",
-      /images/triangle-white-turq-necklace.jpg.jpg
-      note: "Geometric statement necklace with bold triangular wire design."
-    },
-    {
-      title: "Signature Detail",
-      image: "/images/brass-wire-wrapped-earrings.jpg",
-      note: "Textured brass earrings with handcrafted detail."
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-100">
-      <header className="border-b border-white/10 px-6 py-4">
-        <h1 className="text-xl font-semibold">Jennifer Higgs Stewart</h1>
-      </header>
+    <main className="min-h-screen bg-[#111318] text-white">
 
-      <section className="mx-auto max-w-5xl px-6 py-12">
-        <h2 className="text-3xl font-bold">Professional Summary</h2>
-        <p className="mt-4 text-neutral-300">
-          Operations and program management leader with 18+ years of experience driving large-scale delivery and Agile transformation.
-        </p>
+      {/* HERO SECTION */}
+      <section className="mx-auto max-w-7xl grid md:grid-cols-2 gap-10 px-6 py-20">
+
+        {/* LEFT SIDE */}
+        <div className="flex flex-col justify-center">
+          <h1 className="text-5xl font-bold leading-tight">
+            Jennifer Higgs Stewart
+          </h1>
+
+          <p className="mt-6 text-lg text-neutral-300">
+            Operations and program management leader with 18+ years of experience driving enterprise delivery and Agile transformation.
+          </p>
+
+          <div className="mt-6 text-sm text-neutral-400">
+            Maple Grove, MN • (763) 634-1741 • jenahiggs@gmail.com
+          </div>
+        </div>
+
+        {/* RIGHT SIDE (FIXED IMAGE) */}
+        <div className="relative h-[600px] w-full rounded-2xl overflow-hidden border border-white/10">
+          
+          <img
+            src="/images/triangle-white-turq-necklace.jpg.jpg"
+            alt="Signature statement necklace"
+            className="h-full w-full object-cover"
+          />
+
+          <div className="absolute bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+            <p className="text-sm text-amber-300 uppercase tracking-wide">
+              Signature Piece
+            </p>
+            <h3 className="text-xl font-semibold">
+              Visual Identity
+            </h3>
+          </div>
+
+        </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 py-12">
+      {/* EXPERIENCE */}
+      <section className="max-w-6xl mx-auto px-6 py-12">
         <h2 className="text-3xl font-bold">Experience</h2>
-        {experience.map((item) => (
-          <div key={item.role} className="mt-6">
-            <h3 className="text-xl font-semibold">{item.role}</h3>
-            <p className="text-neutral-400">{item.company} • {item.dates}</p>
-            <ul className="mt-3 list-disc pl-5 text-neutral-300">
-              {item.bullets.map((b) => (
+
+        {experience.map((job) => (
+          <div key={job.role} className="mt-6 p-6 border border-white/10 rounded-xl bg-white/5">
+            <h3 className="text-xl font-semibold">{job.role}</h3>
+            <p className="text-neutral-400">
+              {job.company} • {job.location} • {job.dates}
+            </p>
+
+            <ul className="mt-4 list-disc pl-5 text-neutral-300">
+              {job.bullets.map((b) => (
                 <li key={b}>{b}</li>
               ))}
             </ul>
@@ -60,21 +81,6 @@ export default function JenniferHiggsStewartOnlineResume() {
         ))}
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 py-12">
-        <h2 className="text-3xl font-bold">Jewelry Showcase</h2>
-        <div className="mt-6 grid grid-cols-2 gap-6">
-          {jewelryCards.map((j) => (
-            <div key={j.title}>
-              <img src={j.image} className="rounded-xl" />
-              <p className="mt-2 text-sm text-neutral-300">{j.note}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <footer className="border-t border-white/10 px-6 py-6 text-sm text-neutral-400">
-        Contact: jenahiggs@gmail.com
-      </footer>
-    </div>
+    </main>
   );
 }

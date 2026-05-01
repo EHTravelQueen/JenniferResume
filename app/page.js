@@ -1,4 +1,6 @@
 export default function JenniferHiggsStewartOnlineResume() {
+  const imageExt = ".jpg.jpg"; // If your GitHub files are still .jpg.jpg, change this to ".jpg.jpg"
+
   const experience = [
     {
       role: "Engineering Program Manager III",
@@ -8,13 +10,12 @@ export default function JenniferHiggsStewartOnlineResume() {
       focus: "Enterprise storage hardware & software delivery",
       bullets: [
         "Led and coached multiple cross-functional teams delivering enterprise storage hardware and software, improving delivery consistency across globally distributed teams.",
-        "Developed and cultivated strong relationships with executive leadership to drive business success and maintain alignment across diverse stakeholder groups.",
-        "Established standardized delivery cadences, planning forums, and execution rhythms in partnership with engineering managers, increasing predictability and alignment across programs.",
+        "Developed strong relationships with executive leadership to drive business success and maintain alignment across diverse stakeholder groups.",
+        "Established standardized delivery cadences, planning forums, and execution rhythms with engineering managers, increasing predictability across programs.",
         "Drove continuous process improvements and Agile best-practice adoption, reducing schedule risk and improving delivery efficiency.",
         "Owned cross-program dependency management, risk mitigation, and blocker resolution, proactively addressing execution challenges before milestone impact.",
-        "Facilitated and managed project plans, schedules, and other project documentation.",
-        "Developed and facilitated executive-level program reviews, improving visibility into progress, risks, and trade-offs for senior leadership.",
-        "Designed and implemented shared templates, dashboards, and information radiators, significantly improving transparency and cross-team coordination."
+        "Facilitated project plans, schedules, documentation, and executive-level program reviews to improve visibility into progress, risks, and trade-offs.",
+        "Designed shared templates, dashboards, and information radiators, significantly improving transparency and cross-team coordination."
       ]
     },
     {
@@ -22,7 +23,7 @@ export default function JenniferHiggsStewartOnlineResume() {
       company: "Veritas Technologies",
       location: "Roseville, MN",
       dates: "Mar 2016 – Apr 2021",
-      focus: "Agile transformation, enterprise coaching & product delivery",
+      focus: "Agile transformation, product delivery & leadership coaching",
       bullets: [
         "Led high-performing Agile teams delivering complex virtualization, telemetry, and API capabilities for the NetBackup product.",
         "Served as enterprise Agile coach, mentoring scrum masters, engineering managers, and leaders on Agile execution, metrics, and continuous improvement.",
@@ -33,11 +34,11 @@ export default function JenniferHiggsStewartOnlineResume() {
       ]
     },
     {
-      role: "Senior Business Analyst / Project Manager",
+      role: "Senior Business Analyst / Project Manager (Consultant)",
       company: "Best Buy Corporation, Optum via Randstad Technologies",
       location: "Bloomington, MN",
       dates: "Nov 2014 – Dec 2015",
-      focus: "E-commerce, access management & Agile delivery",
+      focus: "E-commerce, access management & Agile delivery support",
       bullets: [
         "Partnered with business stakeholders and software teams to define, prioritize, and deliver requirements for e-commerce and access management platforms.",
         "Supported Agile delivery through backlog refinement, capacity planning, and sprint prioritization, ensuring alignment with business goals.",
@@ -50,7 +51,7 @@ export default function JenniferHiggsStewartOnlineResume() {
       company: "Target Corporation",
       location: "Minneapolis, MN",
       dates: "Jan 2013 – Nov 2014",
-      focus: "Accessibility compliance, QA process improvement & product support",
+      focus: "Accessibility compliance, QA process improvement & team leadership",
       bullets: [
         "Directed an Accessibility Compliance team supporting enterprise digital initiatives.",
         "Established and refined QA and accessibility processes for site refreshes, campaigns, and special projects, improving operational efficiency and consistency.",
@@ -61,11 +62,11 @@ export default function JenniferHiggsStewartOnlineResume() {
       ]
     },
     {
-      role: "Quality & Standards Lead / UAT Coordinator",
+      role: "Quality & Standards Lead / UAT Coordinator (Consultant)",
       company: "Target Corporation",
       location: "Minneapolis, MN",
       dates: "Aug 2012 – Jan 2013",
-      focus: "QA, accessibility review & UAT coordination",
+      focus: "QA, UAT coordination & compliance workflows",
       bullets: [
         "Implemented QA and accessibility review processes for interactive marketing campaigns, establishing repeatable and reliable workflows.",
         "Coordinated UAT execution and stakeholder approvals, ensuring quality and compliance prior to launch.",
@@ -76,7 +77,7 @@ export default function JenniferHiggsStewartOnlineResume() {
 
   const earlyCareer = [
     {
-      role: "Quality Assurance Analyst / Business Analyst / QA Test Lead",
+      role: "Quality Assurance Analyst / Business Analyst / QA Test Lead (Consultant)",
       company: "Olson Advertising & Carmichael Lynch",
       dates: "2011 – 2012",
       bullets: [
@@ -91,8 +92,8 @@ export default function JenniferHiggsStewartOnlineResume() {
       dates: "2005 – 2007; 2010 – 2011",
       bullets: [
         "Developed and validated software and firmware requirements and test cases for regulated medical device systems.",
-        "Partnered with systems engineers to ensure completeness, traceability, and testability of requirements.",
-        "Contributed to both Agile and waterfall lifecycles, improving test coverage and delivery efficiency.",
+        "Partnered with systems engineers to ensure requirements completeness, traceability, and testability.",
+        "Contributed to Agile and waterfall lifecycles, improving test coverage and delivery efficiency.",
         "Promoted within one year based on performance and adaptability."
       ]
     },
@@ -138,6 +139,34 @@ export default function JenniferHiggsStewartOnlineResume() {
     { name: "Certified Scrum Master", org: "Scrum Alliance", date: "Mar 2016" }
   ];
 
+  const jewelryCards = [
+    {
+      title: "Statement Necklace",
+      image: `/images/triangle-white-turq-necklace${imageExt}`,
+      note: "A bold visual anchor used to add memorable character without overpowering the resume."
+    },
+    {
+      title: "Brass Wire Earrings",
+      image: `/images/brass-wire-wrapped-earrings${imageExt}`,
+      note: "Handcrafted texture that reinforces precision, detail, and polish."
+    },
+    {
+      title: "Citrine Tree Necklace",
+      image: `/images/citrine-brass-tree-necklace${imageExt}`,
+      note: "Warm artisan detail that softens the corporate tone."
+    },
+    {
+      title: "Red Brass Earrings",
+      image: `/images/medium-red-brass-earrings${imageExt}`,
+      note: "A confident accent piece for visual contrast."
+    },
+    {
+      title: "Desert Jasper Bracelet",
+      image: `/images/desert-jasper-bracelet${imageExt}`,
+      note: "Earth-toned texture that gives the page depth and warmth."
+    }
+  ];
+
   return (
     <main className="min-h-screen bg-[#111318] text-slate-100">
       <style>{`
@@ -165,12 +194,12 @@ export default function JenniferHiggsStewartOnlineResume() {
 
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(216,170,69,.20),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,.08),transparent_28%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
-          <div className="max-w-5xl">
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-1 md:py-24">
+          <div className="flex flex-col justify-center">
             <div className="mb-5 inline-flex w-fit rounded-full border border-amber-300/30 bg-amber-300/10 px-4 py-2 text-xs font-medium uppercase tracking-[.23em] text-amber-200">
               Program Management • Agile Leadership • Enterprise Operations
             </div>
-            <h2 className="text-4xl font-semibold leading-tight md:text-6xl">
+            <h2 className="max-w-5xl text-4xl font-semibold leading-tight md:text-6xl">
               Building structure, clarity, and momentum across <span className="gold">complex delivery environments.</span>
             </h2>
             <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
@@ -178,7 +207,7 @@ export default function JenniferHiggsStewartOnlineResume() {
             </p>
             <div className="mt-7 flex flex-wrap gap-3 text-sm text-slate-300">
               <span className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2">Maple Grove, MN</span>
-              <a className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2 hover:bg-white/[.08]" href="tel:7636341741">(763) 634-1741</a>
+              <span className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2">(763) 634-1741</span>
               <a className="rounded-full border border-white/10 bg-white/[.04] px-4 py-2 hover:bg-white/[.08]" href="mailto:jenahiggs@gmail.com">jenahiggs@gmail.com</a>
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -207,9 +236,7 @@ export default function JenniferHiggsStewartOnlineResume() {
         <div className="mt-6 grid gap-6 md:grid-cols-[1.15fr_.85fr]">
           <section className="panel rounded-[2rem] border border-white/10 p-7">
             <p className="text-sm uppercase tracking-[.3em] text-amber-300/75">Executive Profile</p>
-            <h3 className="mt-3 text-2xl font-semibold">
-              Trusted partner to executives, engineering leaders, and cross-functional teams.
-            </h3>
+            <h3 className="mt-3 text-2xl font-semibold">Trusted partner to executives, engineering leaders, and cross-functional teams.</h3>
             <p className="mt-4 text-base leading-8 text-slate-300">
               Known for translating strategy into execution, building scalable operating models, and improving delivery predictability through metrics, leadership coaching, and repeatable processes. Jennifer strengthens stakeholder confidence, accelerates delivery, and improves operational health.
             </p>
@@ -237,9 +264,7 @@ export default function JenniferHiggsStewartOnlineResume() {
             <p className="text-sm uppercase tracking-[.3em] text-amber-300/75">Professional Experience</p>
             <h3 className="mt-3 text-3xl font-semibold">Career leadership timeline</h3>
           </div>
-          <p className="max-w-xl text-sm leading-6 text-slate-400">
-            Select each gold role card to expand and view detailed responsibilities.
-          </p>
+          <p className="max-w-xl text-sm leading-6 text-slate-400">Expandable role cards keep the page clean while still preserving the depth of the full resume.</p>
         </div>
 
         <div className="space-y-5">
@@ -248,7 +273,7 @@ export default function JenniferHiggsStewartOnlineResume() {
               <summary className="cursor-pointer list-none">
                 <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                   <div>
-                    <h4 className="text-xl font-semibold text-amber-200 group-open:text-white">{job.role}</h4>
+                    <h4 className="text-xl font-semibold text-white">{job.role}</h4>
                     <p className="mt-1 text-slate-300">{job.company} • {job.location}</p>
                     <p className="mt-3 text-sm text-amber-200/90">{job.focus}</p>
                   </div>
@@ -319,19 +344,40 @@ export default function JenniferHiggsStewartOnlineResume() {
         </div>
       </section>
 
+      <section id="jewelry" className="mx-auto max-w-7xl px-6 py-12">
+        <div className="mb-8 grid gap-6 md:grid-cols-[.9fr_1.1fr]">
+          <div>
+            <p className="text-sm uppercase tracking-[.3em] text-amber-300/75">Visual Brand Accent</p>
+            <h3 className="mt-3 text-3xl font-semibold">Jewelry incorporated with restraint and intention.</h3>
+          </div>
+          <p className="text-base leading-8 text-slate-300">
+            These pieces give the online resume a distinctive editorial feel while keeping the focus on Jennifer’s executive, program, Agile, and operational leadership background.
+          </p>
+        </div>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          {jewelryCards.map((piece) => (
+            <article key={piece.title} className="panel rounded-[1.75rem] border border-white/10 p-4 transition duration-300 hover:-translate-y-1 hover:border-amber-300/30 hover:shadow-2xl hover:shadow-amber-500/10">
+              <div className="aspect-square overflow-hidden rounded-[1.25rem] border border-amber-300/20 bg-slate-900">
+                <img src={piece.image} alt={piece.title} className="h-full w-full object-cover transition duration-300 hover:scale-105" />
+              </div>
+              <h4 className="mt-4 font-semibold text-white">{piece.title}</h4>
+              <p className="mt-2 text-sm leading-6 text-slate-300">{piece.note}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section id="contact" className="mx-auto max-w-7xl px-6 py-12">
         <div className="panel soft-glow rounded-[2rem] border border-amber-300/20 bg-gradient-to-br from-amber-950/30 via-slate-900 to-[#111318] p-8">
           <p className="text-sm uppercase tracking-[.3em] text-amber-300/75">Contact</p>
           <div className="mt-3 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
               <h3 className="text-3xl font-semibold">Ready to bring structure, clarity, and momentum to complex delivery.</h3>
-              <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
-                Available for senior program management, engineering program management, Agile coaching, delivery leadership, and operational transformation opportunities.
-              </p>
+              <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">Available for senior program management, engineering program management, Agile coaching, delivery leadership, and operational transformation opportunities.</p>
             </div>
             <div className="flex flex-wrap gap-3">
               <a href="mailto:jenahiggs@gmail.com" className="rounded-2xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:scale-[1.02]">Email Jennifer</a>
-              <a href="tel:7636341741" className="rounded-2xl border border-white/15 px-5 py-3 font-semibold text-white transition hover:bg-white/[.06]">Call</a>
+              <span className="rounded-2xl border border-white/15 px-5 py-3 font-semibold text-white">(763) 634-1741</span>
             </div>
           </div>
         </div>

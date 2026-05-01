@@ -10,75 +10,152 @@ export default function JenniferHiggsStewartOnlineResume() {
       focus: "Enterprise storage hardware & software delivery",
       bullets: [
         "Led and coached multiple cross-functional teams delivering enterprise storage hardware and software.",
-        "Built strong executive relationships to maintain alignment across leadership.",
-        "Established standardized delivery cadences and planning rhythms.",
-        "Drove Agile best-practice adoption and continuous improvement.",
+        "Developed strong executive relationships to maintain alignment.",
+        "Established delivery cadences and execution rhythms.",
+        "Drove Agile best practices and continuous improvement.",
         "Owned cross-program dependency management and risk mitigation.",
-        "Developed executive-level program reviews for leadership visibility."
+        "Created executive-level program visibility and reporting."
       ]
     }
   ];
 
+  const skills = [
+    "Program Management",
+    "Agile Leadership",
+    "Stakeholder Engagement",
+    "Executive Communication",
+    "Team Development",
+    "Process Improvement",
+    "JIRA",
+    "Confluence"
+  ];
+
+  const certifications = [
+    "Certified Scrum Professional (CSP-SM)",
+    "Advanced Certified Scrum Master",
+    "ICAgile Certified Coach (ICP-ACC)",
+    "Certified Scrum Master"
+  ];
+
+  const jewelryCards = [
+    {
+      title: "Statement Necklace",
+      image: `/images/triangle-white-turq-necklace${imageExt}`,
+      note: "Signature visual accent."
+    },
+    {
+      title: "Brass Wire Earrings",
+      image: `/images/brass-wire-wrapped-earrings${imageExt}`,
+      note: "Handcrafted detail."
+    },
+    {
+      title: "Citrine Tree Necklace",
+      image: `/images/citrine-brass-tree-necklace${imageExt}`,
+      note: "Warm artisan feel."
+    },
+    {
+      title: "Red Brass Earrings",
+      image: `/images/medium-red-brass-earrings${imageExt}`,
+      note: "Bold contrast piece."
+    },
+    {
+      title: "Desert Jasper Bracelet",
+      image: `/images/desert-jasper-bracelet${imageExt}`,
+      note: "Earth-tone balance."
+    }
+  ];
+
   return (
-    <main className="min-h-screen bg-[#111318] text-white">
+    <main className="min-h-screen bg-[#111318] text-white px-6">
 
-      {/* HERO SECTION */}
-      <section className="mx-auto max-w-7xl grid md:grid-cols-2 gap-10 px-6 py-20">
+      {/* HEADER */}
+      <header className="py-6 border-b border-white/10">
+        <h1 className="text-2xl font-semibold">Jennifer Higgs Stewart</h1>
+        <p className="text-sm text-gray-400">Online Resume</p>
+      </header>
 
-        {/* LEFT SIDE */}
-        <div className="flex flex-col justify-center">
-          <h1 className="text-5xl font-bold leading-tight">
-            Jennifer Higgs Stewart
-          </h1>
+      {/* HERO */}
+      <section className="py-12">
+        <h2 className="text-4xl font-bold leading-tight">
+          Building structure, clarity, and momentum across
+          <span className="text-yellow-400"> complex delivery environments.</span>
+        </h2>
 
-          <p className="mt-6 text-lg text-neutral-300">
-            Operations and program management leader with 18+ years of experience driving enterprise delivery and Agile transformation.
-          </p>
+        <p className="mt-4 text-gray-300 max-w-2xl">
+          Operations and program management leader with 18+ years of experience
+          driving enterprise delivery and Agile transformation.
+        </p>
 
-          <div className="mt-6 text-sm text-neutral-400">
-            Maple Grove, MN • (763) 634-1741 • jenahiggs@gmail.com
-          </div>
-        </div>
-
-        {/* RIGHT SIDE (FIXED IMAGE) */}
-        <div className="relative h-[600px] w-full rounded-2xl overflow-hidden border border-white/10">
-          
-          <img
-            src="/images/triangle-white-turq-necklace.jpg.jpg"
-            alt="Signature statement necklace"
-            className="h-full w-full object-cover"
-          />
-
-          <div className="absolute bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-            <p className="text-sm text-amber-300 uppercase tracking-wide">
-              Signature Piece
-            </p>
-            <h3 className="text-xl font-semibold">
-              Visual Identity
-            </h3>
-          </div>
-
+        <div className="mt-4 text-sm text-gray-400">
+          Maple Grove, MN • (763) 634-1741 • jenahiggs@gmail.com
         </div>
       </section>
 
       {/* EXPERIENCE */}
-      <section className="max-w-6xl mx-auto px-6 py-12">
-        <h2 className="text-3xl font-bold">Experience</h2>
+      <section className="py-10">
+        <h3 className="text-2xl font-semibold mb-4">Experience</h3>
 
         {experience.map((job) => (
-          <div key={job.role} className="mt-6 p-6 border border-white/10 rounded-xl bg-white/5">
-            <h3 className="text-xl font-semibold">{job.role}</h3>
-            <p className="text-neutral-400">
+          <div key={job.role} className="mb-6 p-5 border border-white/10 rounded-xl">
+            <h4 className="font-semibold text-lg">{job.role}</h4>
+            <p className="text-gray-400 text-sm">
               {job.company} • {job.location} • {job.dates}
             </p>
 
-            <ul className="mt-4 list-disc pl-5 text-neutral-300">
+            <ul className="mt-3 list-disc pl-5 text-gray-300">
               {job.bullets.map((b) => (
                 <li key={b}>{b}</li>
               ))}
             </ul>
           </div>
         ))}
+      </section>
+
+      {/* SKILLS */}
+      <section className="py-10">
+        <h3 className="text-2xl font-semibold mb-4">Skills</h3>
+        <div className="flex flex-wrap gap-2">
+          {skills.map((skill) => (
+            <span key={skill} className="px-3 py-1 border border-white/20 rounded-full text-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* CERTIFICATIONS */}
+      <section className="py-10">
+        <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
+        <ul className="text-gray-300">
+          {certifications.map((cert) => (
+            <li key={cert}>• {cert}</li>
+          ))}
+        </ul>
+      </section>
+
+      {/* JEWELRY SECTION */}
+      <section className="py-10">
+        <h3 className="text-2xl font-semibold mb-4">Visual Brand Accent</h3>
+
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          {jewelryCards.map((piece) => (
+            <div key={piece.title}>
+              <img
+                src={piece.image}
+                alt={piece.title}
+                className="rounded-lg mb-2"
+              />
+              <p className="text-sm text-gray-400">{piece.title}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="py-10 border-t border-white/10">
+        <h3 className="text-2xl font-semibold mb-3">Contact</h3>
+        <p>Email: jenahiggs@gmail.com</p>
+        <p>Phone: (763) 634-1741</p>
       </section>
 
     </main>

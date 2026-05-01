@@ -22,7 +22,7 @@ export default function JenniferHiggsStewartOnlineResume() {
   const jewelryCards = [
     {
       title: "Hero Statement Necklace",
-      image: "/images/triangle-white-turq-necklace.jpg",
+      /images/triangle-white-turq-necklace.jpg.jpg
       note: "Geometric statement necklace with bold triangular wire design."
     },
     {
